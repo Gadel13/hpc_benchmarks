@@ -1,6 +1,6 @@
 # hpc_benchmarks
 
-## Бенчмарки:
+## Последовательные бенчмарки:
 * load µops/sec
 * store µops/sec
 * l1_miss_load miss/sec
@@ -11,7 +11,7 @@
 * l3_miss_store miss/sec
 *memfree
 
-# MPI:
+## MPI бенчмарки:
 * mpi_bw (osu_bw http://mvapich.cse.ohio-state.edu/benchmarks/)
 * fs_write/read (mpi-tile-io https://www.vi4io.org/tools/benchmarks/mpi-tile-io)
 
