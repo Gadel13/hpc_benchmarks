@@ -1,8 +1,8 @@
 ../../util/osu_util_mpi.o: ../../util/osu_util_mpi.c \
  /usr/include/stdc-predef.h ../../util/osu_util_mpi.h \
- /opt/mpi/openmpi-4.1.0-gcc9/include/mpi.h \
+ /opt/mpi/openmpi-1.8.4-gcc/include/mpi.h \
  /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/include/stddef.h \
- /opt/mpi/openmpi-4.1.0-gcc9/include/mpi_portable_platform.h \
+ /opt/mpi/openmpi-1.8.4-gcc/include/mpi_portable_platform.h \
  ../../util/osu_util.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
@@ -43,11 +43,11 @@
 
 ../../util/osu_util_mpi.h:
 
-/opt/mpi/openmpi-4.1.0-gcc9/include/mpi.h:
+/opt/mpi/openmpi-1.8.4-gcc/include/mpi.h:
 
 /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/include/stddef.h:
 
-/opt/mpi/openmpi-4.1.0-gcc9/include/mpi_portable_platform.h:
+/opt/mpi/openmpi-1.8.4-gcc/include/mpi_portable_platform.h:
 
 ../../util/osu_util.h:
 

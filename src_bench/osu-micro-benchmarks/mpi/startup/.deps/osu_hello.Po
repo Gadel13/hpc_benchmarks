@@ -1,7 +1,7 @@
 osu_hello.o: osu_hello.c /usr/include/stdc-predef.h \
- /opt/mpi/openmpi-4.1.0-gcc9/include/mpi.h \
+ /opt/mpi/openmpi-1.8.4-gcc/include/mpi.h \
  /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/include/stddef.h \
- /opt/mpi/openmpi-4.1.0-gcc9/include/mpi_portable_platform.h \
+ /opt/mpi/openmpi-1.8.4-gcc/include/mpi_portable_platform.h \
  /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h /usr/include/bits/types.h \
@@ -13,11 +13,11 @@ osu_hello.o: osu_hello.c /usr/include/stdc-predef.h \
 
 /usr/include/stdc-predef.h:
 
-/opt/mpi/openmpi-4.1.0-gcc9/include/mpi.h:
+/opt/mpi/openmpi-1.8.4-gcc/include/mpi.h:
 
 /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/include/stddef.h:
 
-/opt/mpi/openmpi-4.1.0-gcc9/include/mpi_portable_platform.h:
+/opt/mpi/openmpi-1.8.4-gcc/include/mpi_portable_platform.h:
 
 /usr/include/stdio.h:
 

@@ -23,6 +23,7 @@ memfree.o: src_bench/memfree/memfree.hpp src_bench/memfree/memfree.cpp
 hpc_benchmarks: hpc_benchmarks.cpp load_store.o cache_miss.o utils.o memfree.o
 	$(CXX) $(LDFLAGS) $(CXXFLAGS) hpc_benchmarks.cpp utils.o load_store.o cache_miss.o  memfree.o -o hpc_benchmarks
 	chmod 777 mpi_hpc_benchmarks.sh
+	chmod 777 run_hpc_benchmarks.sh
 
 osu:
 	cd src_bench/osu-micro-benchmarks; chmod 777 configure; ./configure CC=$(MPICC) CXX=$(MPICXX); make; cd ../..

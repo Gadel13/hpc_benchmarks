@@ -431,7 +431,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/gadelzakirov_2062/hpc_benchmarks/src_bench/osu-micro-benchmarks'
+ac_pwd='/home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/usr/bin/mkdir -p'
@@ -700,12 +700,12 @@ include_expsyms_CXX=''
 prelink_cmds_CXX=''
 file_list_spec_CXX=''
 hardcode_action_CXX='immediate'
-compiler_lib_search_dirs_CXX='/opt/mpi/openmpi-4.1.0-gcc9/lib /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0 /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../../../lib64 /lib/../lib64 /usr/lib/../lib64 /opt/slurm/15.08.1/lib /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../..'
+compiler_lib_search_dirs_CXX='/opt/mpi/openmpi-1.8.4-gcc/lib /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0 /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../../../lib64 /lib/../lib64 /usr/lib/../lib64 /opt/slurm/15.08.1/lib /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../..'
 predep_objects_CXX='/lib/../lib64/crti.o /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/crtbeginS.o'
 postdep_objects_CXX='/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/crtendS.o /lib/../lib64/crtn.o'
 predeps_CXX=''
-postdeps_CXX='-lmpi -lstdc++ -lm -lgcc_s -lpthread -lc -lgcc_s'
-compiler_lib_search_path_CXX='-L/opt/mpi/openmpi-4.1.0-gcc9/lib -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0 -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/slurm/15.08.1/lib -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../..'
+postdeps_CXX='-lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lpthread -lc -lgcc_s'
+compiler_lib_search_path_CXX='-L/opt/mpi/openmpi-1.8.4-gcc/lib -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0 -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/slurm/15.08.1/lib -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../..'
 
 LTCC='mpicc'
 LTCFLAGS='-g -O2'
@@ -929,7 +929,7 @@ S["build"]="x86_64-unknown-linux-gnu"
 S["LIBTOOL"]="$(SHELL) $(top_builddir)/libtool"
 S["am__untar"]="${AMTAR} xf -"
 S["am__tar"]="${AMTAR} chof - \"$$tardir\""
-S["AMTAR"]="${SHELL} /home/gadelzakirov_2062/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run tar"
+S["AMTAR"]="${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run tar"
 S["am__leading_dot"]="."
 S["SET_MAKE"]=""
 S["AWK"]="gawk"
@@ -937,12 +937,12 @@ S["mkdir_p"]="/usr/bin/mkdir -p"
 S["MKDIR_P"]="/usr/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="strip"
-S["install_sh"]="${SHELL} /home/gadelzakirov_2062/hpc_benchmarks/src_bench/osu-micro-benchmarks/install-sh"
-S["MAKEINFO"]="${SHELL} /home/gadelzakirov_2062/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/gadelzakirov_2062/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /home/gadelzakirov_2062/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /home/gadelzakirov_2062/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /home/gadelzakirov_2062/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/install-sh"
+S["MAKEINFO"]="${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run automake-1.11"
+S["AUTOCONF"]="${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run aclocal-1.11"
 S["VERSION"]="5.7.1"
 S["PACKAGE"]="osu-micro-benchmarks"
 S["CYGPATH_W"]="echo"

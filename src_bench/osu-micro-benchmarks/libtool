@@ -9040,17 +9040,17 @@ file_list_spec=""
 hardcode_action=immediate
 
 # The directories searched by this compiler when creating a shared library.
-compiler_lib_search_dirs="/opt/mpi/openmpi-4.1.0-gcc9/lib /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0 /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../../../lib64 /lib/../lib64 /usr/lib/../lib64 /opt/slurm/15.08.1/lib /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../.."
+compiler_lib_search_dirs="/opt/mpi/openmpi-1.8.4-gcc/lib /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0 /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../../../lib64 /lib/../lib64 /usr/lib/../lib64 /opt/slurm/15.08.1/lib /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../.."
 
 # Dependencies to place before and after the objects being linked to
 # create a shared library.
 predep_objects="/lib/../lib64/crti.o /opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/crtbeginS.o"
 postdep_objects="/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/crtendS.o /lib/../lib64/crtn.o"
 predeps=""
-postdeps="-lmpi -lstdc++ -lm -lgcc_s -lpthread -lc -lgcc_s"
+postdeps="-lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lpthread -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/opt/mpi/openmpi-4.1.0-gcc9/lib -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0 -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/slurm/15.08.1/lib -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../.."
+compiler_lib_search_path="-L/opt/mpi/openmpi-1.8.4-gcc/lib -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0 -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/slurm/15.08.1/lib -L/opt/software/gcc-9.1/lib/gcc/x86_64-linux-gnu/9.1.0/../../.."
 
 # ### END LIBTOOL TAG CONFIG: CXX

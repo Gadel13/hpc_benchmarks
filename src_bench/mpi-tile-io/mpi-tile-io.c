@@ -183,9 +183,8 @@ int main(int argc,
     pass_parameters();
     
     if (filename == NULL) {
-		fprintf(stderr, "no filename specified...exiting\n");
-		MPI_Finalize();
-		return 1;
+	MPI_Finalize();
+	return 1;
     }
     
     if (nr_procs < nr_tiles_x * nr_tiles_y) {
@@ -223,13 +222,12 @@ int main(int argc,
 		else {
 		    /* get rid of the extras */
 		    MPI_Comm_split(MPI_COMM_WORLD, 1, my_rank, &tmp_comm);
-		    printf("my_rank >= nr_procs_used\n");
 		    MPI_Finalize();
 		    return 0;
 		}
 
 		MPI_Cart_create(tmp_comm, 2, nr_tiles, is_periodic, 1, &cart_comm);
-		MPI_Comm_free(&tmp_comm);
+		// MPI_Comm_free(&tmp_comm);
 	    }
 	    else {
 		/* just the right number of processes */
@@ -464,7 +462,7 @@ int main(int argc,
 	//     fclose(file);
 	// }
 
-    MPI_Finalize();
+    // MPI_Finalize();
     return 0;
 }
 
@@ -521,7 +519,7 @@ void parse_args(int argc,
 	case OPT_FILENAME:
 	    if (filename != NULL) {
 		/* was defined in an env. variable; over-riding */
-		free(filename);
+		// free(filename);
 	    }
 	    if (optarg == NULL) {
 		fprintf(stderr, "error: no argument to filename option\n");
