@@ -523,7 +523,7 @@ conftest.c:30:6: warning: conflicting types for built-in function 'sqrt'; expect
       |      ^~~~
 conftest.c:1:1: note: 'sqrt' is declared in header '<math.h>'
     1 | /* confdefs.h */
-/usr/bin/ld: /tmp/cc74djqH.o: undefined reference to symbol 'sqrt@@GLIBC_2.2.5'
+/usr/bin/ld: /tmp/cccEjvE7.o: undefined reference to symbol 'sqrt@@GLIBC_2.2.5'
 //usr/lib64/libm.so.6: error adding symbols: DSO missing from command line
 collect2: error: ld returned 1 exit status
 configure:15004: $? = 1
@@ -643,8 +643,8 @@ configure:15251: $? = 0
 configure:15251: result: yes
 configure:15256: checking for shmem_barrier_all
 configure:15256: mpicc -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/ccjo3ohW.o: In function `main':
-/home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `shmem_barrier_all'
+/tmp/cc4nxOvM.o: In function `main':
+/home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `shmem_barrier_all'
 collect2: error: ld returned 1 exit status
 configure:15256: $? = 1
 configure: failed program was:
@@ -719,8 +719,8 @@ configure: failed program was:
 configure:15256: result: no
 configure:15261: checking for upc_memput
 configure:15261: mpicc -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/ccoZoLfc.o: In function `main':
-/home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `upc_memput'
+/tmp/ccIGDvZ4.o: In function `main':
+/home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `upc_memput'
 collect2: error: ld returned 1 exit status
 configure:15261: $? = 1
 configure: failed program was:
@@ -850,8 +850,8 @@ configure: failed program was:
 configure:15266: result: no
 configure:15272: checking for shmem_finalize
 configure:15272: mpicc -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/ccfWnKLw.o: In function `main':
-/home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `shmem_finalize'
+/tmp/ccQmDMIs.o: In function `main':
+/home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `shmem_finalize'
 collect2: error: ld returned 1 exit status
 configure:15272: $? = 1
 configure: failed program was:
@@ -1065,15 +1065,15 @@ lt_cv_sys_max_cmd_len=1572864
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run aclocal-1.11'
+ACLOCAL='${SHELL} /home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run aclocal-1.11'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
-AMTAR='${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run tar'
+AMTAR='${SHELL} /home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run tar'
 AR='ar'
-AUTOCONF='${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run autoconf'
-AUTOHEADER='${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run autoheader'
-AUTOMAKE='${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run automake-1.11'
+AUTOCONF='${SHELL} /home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run autoconf'
+AUTOHEADER='${SHELL} /home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run autoheader'
+AUTOMAKE='${SHELL} /home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run automake-1.11'
 AWK='gawk'
 BUILD_PROFILING_LIB_FALSE=''
 BUILD_PROFILING_LIB_TRUE='#'
@@ -1118,7 +1118,7 @@ LIBTOOL='$(SHELL) $(top_builddir)/libtool'
 LIPO=''
 LN_S='ln -s'
 LTLIBOBJS=''
-MAKEINFO='${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run makeinfo'
+MAKEINFO='${SHELL} /home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/missing --run makeinfo'
 MKDIR_P='/usr/bin/mkdir -p'
 MPI2_LIBRARY_FALSE='#'
 MPI2_LIBRARY_TRUE=''
@@ -1193,7 +1193,7 @@ host_vendor='unknown'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/install-sh'
+install_sh='${SHELL} /home/gadelzakirov_2062/git_hpc_benchmarks/hpc_benchmarks/src_bench/osu-micro-benchmarks/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
