@@ -59,4 +59,4 @@ make
 
 ./run_hpc_benchmarks.sh mpi -h (выведет параметры запуска MPI бенчмарков)
 
-./run_hpc_benchmarks.sh seq -b mpi_bw (Запустит бенчмарк mpi_bw один раз)
+./run_hpc_benchmarks.sh mpi -b mpi_bw (Запустит бенчмарк mpi_bw один раз)
