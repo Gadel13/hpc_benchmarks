@@ -523,7 +523,7 @@ conftest.c:30:6: warning: conflicting types for built-in function 'sqrt'; expect
       |      ^~~~
 conftest.c:1:1: note: 'sqrt' is declared in header '<math.h>'
     1 | /* confdefs.h */
-/usr/bin/ld: /tmp/cchFzuXd.o: undefined reference to symbol 'sqrt@@GLIBC_2.2.5'
+/usr/bin/ld: /tmp/ccq7CbP3.o: undefined reference to symbol 'sqrt@@GLIBC_2.2.5'
 //usr/lib64/libm.so.6: error adding symbols: DSO missing from command line
 collect2: error: ld returned 1 exit status
 configure:15004: $? = 1
@@ -643,7 +643,7 @@ configure:15251: $? = 0
 configure:15251: result: yes
 configure:15256: checking for shmem_barrier_all
 configure:15256: mpicc -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/ccJlE33z.o: In function `main':
+/tmp/cc2Jc5vt.o: In function `main':
 /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `shmem_barrier_all'
 collect2: error: ld returned 1 exit status
 configure:15256: $? = 1
@@ -719,7 +719,7 @@ configure: failed program was:
 configure:15256: result: no
 configure:15261: checking for upc_memput
 configure:15261: mpicc -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/ccqu2T5G.o: In function `main':
+/tmp/ccUA5K7P.o: In function `main':
 /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `upc_memput'
 collect2: error: ld returned 1 exit status
 configure:15261: $? = 1
@@ -850,7 +850,7 @@ configure: failed program was:
 configure:15266: result: no
 configure:15272: checking for shmem_finalize
 configure:15272: mpicc -o conftest -g -O2   conftest.c -lm  >&5
-/tmp/cci9OLC5.o: In function `main':
+/tmp/ccVEzUsX.o: In function `main':
 /home/gadelzakirov_2062/_scratch/hpc_benchmarks/src_bench/osu-micro-benchmarks/conftest.c:65: undefined reference to `shmem_finalize'
 collect2: error: ld returned 1 exit status
 configure:15272: $? = 1

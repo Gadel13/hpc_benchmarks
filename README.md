@@ -18,7 +18,7 @@
 * fs_write/read (mpi-tile-io https://www.vi4io.org/tools/benchmarks/mpi-tile-io)
 
 Время работы бенчмарка mpi_bw (без указания ключа -t) составляет примерно 8 минут.
-Время работы бенчмарков fs_write и fs_read (без указания ключа -t) составляет примерно 20 секунд.
+Время работы бенчмарков fs_write и fs_read (без указания ключа -t) составляет примерно 20 секунд. Если указать ключ -t с временем меньше, чем работает бенчмарк, то бенчмарк все равно отработает один раз.
 
 Необходимые для бенчмарков характеристики системы необходимо изменить в файле utils.hpp.
 MPI бенчмарки запускаются по одному.
@@ -51,17 +51,17 @@ MPI бенчмарки запускаются по одному.
 make
 
 Собираются все бенчмарки. Все последовательные бенчмарки в программе hpc_benchmarks, MPI бенчмарки отдельно.
-Для упрощения запусков на СК Ломоносов 2 реализован скрипт run_hpc_benchmarks.sh.
+Для упрощения запусков на СК Ломоносов 2 реализован скрипт run_hpc_benchmarks.sh <queue> <mpi/seq> <papams>.
 
 ## Пример запуска на СК Ломоносов 2.
 module add openmpi/1.8.4-gcc slurm gcc
 
 make
 
-./run_hpc_benchmarks.sh seq -h (выведет параметры запуска последовательных бенчмарков)
+./run_hpc_benchmarks.sh test seq -h (выведет параметры запуска последовательных бенчмарков)
 
-./run_hpc_benchmarks.sh seq -b load store memfree l1_miss -t 1 (запусит каждый из бенчмарков load, store, memfree, l1_miss_load, l1_miss_store на 1 минуту)
+./run_hpc_benchmarks.sh compute seq -b load store memfree l1_miss -t 1 (запусит каждый из бенчмарков load, store, memfree, l1_miss_load, l1_miss_store на 1 минуту в очереди compute)
 
-./run_hpc_benchmarks.sh mpi -h (выведет параметры запуска MPI бенчмарков)
+./run_hpc_benchmarks.sh compute mpi -h (выведет параметры запуска MPI бенчмарков)
 
-./run_hpc_benchmarks.sh mpi -b mpi_bw (Запустит бенчмарк mpi_bw один раз)
+./run_hpc_benchmarks.sh compute mpi -b mpi_bw (Запустит бенчмарк mpi_bw один раз в очереди compute)

@@ -407,12 +407,12 @@ void memfree_test(){
         auto result = memfree(time_minutes);
         if(!is_max){
             if(outfilename != "") {
-                cout << "\r" << setw(out_size) << result.system_memfree <<
+                out <<  setw(out_size) << result.system_memfree <<
                         setw(out_size) << result.system_buf_cache <<
                         setw(out_size) << result.bench_value << 
                         setw(out_size) << result.bench_value*100.0/theoretical << endl;
             } else {
-                out <<  setw(out_size) << result.system_memfree <<
+                cout << "\r" <<  setw(out_size) << result.system_memfree <<
                         setw(out_size) << result.system_buf_cache <<
                         setw(out_size) << result.bench_value << 
                         setw(out_size) << result.bench_value*100.0/theoretical << endl;
@@ -425,12 +425,12 @@ void memfree_test(){
     }
     if(is_max){
         if(outfilename != "") {
-            cout << "\r" << setw(out_size) << max.system_memfree <<
+            out <<  setw(out_size) << max.system_memfree <<
                     setw(out_size) << max.system_buf_cache <<
                     setw(out_size) << max.bench_value << 
                     setw(out_size) << max.bench_value*100.0/theoretical << endl;
         } else {
-            out <<  setw(out_size) << max.system_memfree <<
+            cout << "\r" <<  setw(out_size) << max.system_memfree <<
                     setw(out_size) << max.system_buf_cache <<
                     setw(out_size) << max.bench_value << 
                     setw(out_size) << max.bench_value*100.0/theoretical << endl;
