@@ -22,7 +22,7 @@ using namespace std;
 #define theoretical_l3_miss_store 1118.306304
 
 // KB
-#define theoretical_memfree 64*1024
+#define theoretical_memfree 64*1024*1024
 
 // Mbit/sec
 #define theoretical_mpi_bw 54.54*1024
