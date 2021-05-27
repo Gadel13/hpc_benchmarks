@@ -9,11 +9,16 @@
 * l2_miss_store miss/sec
 * l3_miss_load miss/sec
 * l3_miss_store miss/sec
-*memfree
+* memfree
+
+Время работы каждого последовательного бенчмарка (без указания ключа -t) составляет не более 1 минуты.
 
 ## MPI бенчмарки:
 * mpi_bw (osu_bw http://mvapich.cse.ohio-state.edu/benchmarks/)
 * fs_write/read (mpi-tile-io https://www.vi4io.org/tools/benchmarks/mpi-tile-io)
+
+Время работы бенчмарка mpi_bw (без указания ключа -t) составляет примерно 8 минут.
+Время работы бенчмарков fs_write и fs_read (без указания ключа -t) составляет примерно 20 секунд.
 
 Необходимые для бенчмарков характеристики системы необходимо изменить в файле utils.hpp.
 MPI бенчмарки запускаются по одному.

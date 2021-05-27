@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HELP="Usage:\nExecute: sbatch -n <np> ./mpi_hpc_benchmarks.sh <params>\n-h | --help show usage\n-b | --bench <bencmark> select benchmark (Avaliable: mpi_bw, fs_write, fs_read)\n-t | --time <minutes> time in minutes of executing each benchmark (default - 0 no limit)\n--max <0/1> get maximum values from benchmarks (0 - false/ 1 - true; default - 0)\n"
+HELP="Usage:\nExecute: sbatch -n <np> ./mpi_hpc_benchmarks.sh <params>\n-h | --help show usage\n-b | --bench <bencmark> select benchmark (Avaliable: mpi_bw, fs_write, fs_read)\n-t | --time <minutes> time in minutes of executing each benchmark [1, inf) (default - 0 no limit)\n--max <0/1> get maximum values from benchmarks (0 - false/ 1 - true; default - 0) If use --max 1 - flag -t dont work\n"
 
 bench="none"
 time=0
