@@ -51,7 +51,7 @@ MPI бенчмарки запускаются по одному.
 make
 
 Собираются все бенчмарки. Все последовательные бенчмарки в программе hpc_benchmarks, MPI бенчмарки отдельно.
-Для упрощения запусков на СК Ломоносов 2 реализован скрипт run_hpc_benchmarks.sh <queue> <mpi/seq> <papams>.
+Для упрощения запусков на СК Ломоносов 2 реализован скрипт run_hpc_benchmarks.sh &lt;queue> &lt;mpi/seq> &lt;papams>.
 
 ## Пример запуска на СК Ломоносов 2.
 module add openmpi/1.8.4-gcc slurm gcc
